@@ -49,7 +49,7 @@
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.09);
 }
 .product-thumb .caption {
-  min-height: 150px;
+  
 }
 .product-thumb .image img {
   margin-left: auto;
@@ -154,4 +154,19 @@ footer {
 #column-left .product-layout,
 #column-right .product-layout {
   width: 100%;
+}
+
+.navbar-header{
+	float:none;
+}
+
+.caption h4,p.price,p.text-danger{
+	text-align:center;
+}
+p.price,p.text-danger{
+	font-size:22px;
+}
+
+ .product-thumb .btn-group,.product-thumb .btn-group .btn{
+	width:100%;
 }
