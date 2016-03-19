@@ -1,5 +1,5 @@
 <li id="cart" class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shopping-cart n-icon"></i><span id="cart-total"><?php echo $text_items; ?></span></a>
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shopping-cart n-icon"></i></a>
   <ul class="dropdown-menu">
     <?php if ($products || $vouchers) { ?>
     <li>
