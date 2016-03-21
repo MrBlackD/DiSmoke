@@ -38,7 +38,7 @@
           </ul>
         </div>
       </div>
-      <p class="text-center text-uppercase text-muted powered">Design by <a href="//themefiber.com/">themefiber</a>. <?php echo $powered; ?></p>
+      <!--<p class="text-center text-uppercase text-muted powered">Design by <a href="//themefiber.com/">themefiber</a>. <?php echo $powered; ?></p>-->
   </footer>
 </div>
 

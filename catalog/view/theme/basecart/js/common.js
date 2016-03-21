@@ -31,7 +31,7 @@ function getQuantity() {
   document.getElementById("cart-total").innerHTML = nop;
 
   if (document.getElementById("cart-total").innerHTML !== "0") {
-    document.getElementById("cart-total").style.display = "block";
+    //document.getElementById("cart-total").style.display = "block";
   }
 }
 

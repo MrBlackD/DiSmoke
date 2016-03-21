@@ -53,12 +53,12 @@
       <?php } ?>
       <?php } ?>
       <?php if ($products) { ?>
-      
+      <p><a href="<?php echo $compare; ?>" id="compare-total" class="btn btn-primary" style="display:none"><?php echo $text_compare; ?></a></p>
       <div class="row">
         <div class="col-md-4">
-          <div class="btn-group hidden-xs">
-            <button style="display:none;" type="button" id="list-view" class="btn btn-default" data-toggle="tooltip" title="<?php echo $button_list; ?>"><i class="fa fa-th-list"></i></button>
-            <button style="display:none;" type="button" id="grid-view" class="btn btn-default" data-toggle="tooltip" title="<?php echo $button_grid; ?>"><i class="fa fa-th"></i></button>
+          <div class="btn-group hidden-xs" style="display:none">
+            <button type="button" id="list-view" class="btn btn-default" data-toggle="tooltip" title="<?php echo $button_list; ?>"><i class="fa fa-th-list"></i></button>
+            <button type="button" id="grid-view" class="btn btn-default" data-toggle="tooltip" title="<?php echo $button_grid; ?>"><i class="fa fa-th"></i></button>
           </div>
         </div>
         <div class="col-md-2 text-right">
@@ -97,6 +97,7 @@
             <div>
               <div class="caption">
                 <h4><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
+                <p><?php echo $product['description']; ?></p>
                 <?php if ($product['rating']) { ?>
                 <div class="rating">
                   <?php for ($i = 1; $i <= 5; $i++) { ?>
@@ -109,13 +110,13 @@
                 </div>
                 <?php } ?>
                 <?php if ($product['price']) { ?>
-                <p class="price">
+                
                   <?php if (!$product['special']) { ?>
-                  <strong><?php echo $product['price']; ?></strong>
+                  <p class="price"><strong><?php echo $product['price']; ?></strong></p>
                   <?php } else { ?>
-                  <p class="text-danger"><strong><?php echo $product['special']; ?></strong></p>
+                   <p class="price"><p class="text-danger"><strong><?php echo $product['special']; ?></strong></p></p>
                   <?php } ?>
-                </p>
+                
                 <?php } ?>
               </div>
               <div class="btn-group">
